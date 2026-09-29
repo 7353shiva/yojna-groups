@@ -1364,7 +1364,6 @@ main {
     opacity: 1;
 }
 
-
 /* =========================================================
    25. CONTACT CTA
 ========================================================= */
@@ -1372,44 +1371,65 @@ main {
 .home-contact-cta {
     position: relative;
 
-    padding: 100px 0;
+    width: calc(100% - 80px);
+    max-width: 1250px;
 
-    background-color: #d6a23a;
+    margin: 80px auto;
+
+    padding: 65px 70px;
+
+    background-color: #202b2a;
+
+    border: 1px solid rgba(214, 162, 58, 0.45);
+
+    border-radius: 28px;
 
     overflow: hidden;
+
+    box-shadow:
+        0 25px 60px rgba(32, 43, 42, 0.15);
 }
+
+
+/* GOLD CORNER DESIGN */
 
 .home-contact-cta::before {
     content: "";
 
     position: absolute;
 
-    width: 420px;
-    height: 420px;
+    width: 280px;
+    height: 280px;
 
-    right: -180px;
-    top: -180px;
+    right: -120px;
+    top: -120px;
 
-    border: 1px solid rgba(32, 43, 42, 0.2);
+    border: 1px solid rgba(214, 162, 58, 0.5);
 
     border-radius: 50%;
 }
+
+
+/* SECOND CIRCLE */
 
 .home-contact-cta::after {
     content: "";
 
     position: absolute;
 
-    width: 260px;
-    height: 260px;
+    width: 180px;
+    height: 180px;
 
-    left: -130px;
-    bottom: -130px;
+    left: -90px;
+    bottom: -90px;
 
-    border: 1px solid rgba(32, 43, 42, 0.2);
+    border: 1px solid rgba(214, 162, 58, 0.3);
 
     border-radius: 50%;
 }
+
+
+/* GOLD OVERLAY */
 
 .cta-overlay {
     position: absolute;
@@ -1419,29 +1439,82 @@ main {
     background:
         linear-gradient(
             135deg,
-            rgba(214, 162, 58, 0.95),
-            rgba(214, 162, 58, 0.8)
+            rgba(214, 162, 58, 0.06),
+            transparent 45%,
+            rgba(214, 162, 58, 0.08)
         );
+
+    pointer-events: none;
 }
+
+
+/* CTA CONTENT */
 
 .cta-content {
     position: relative;
 
     max-width: 850px;
 
-    margin: 0 auto;
+    margin: 0;
 
-    text-align: center;
+    padding-left: 30px;
+
+    text-align: left;
 
     z-index: 2;
 }
 
+
+/* GOLD LEFT LINE */
+
+.cta-content::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 5px;
+
+    width: 4px;
+    height: 90px;
+
+    background-color: #d6a23a;
+
+    border-radius: 10px;
+}
+
+
+/* SMALL LABEL */
+
+.cta-content .section-label {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 15px;
+
+    color: #d6a23a;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+/* HEADING */
+
 .cta-content h2 {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 
-    color: #202b2a;
+    color: #ffffff;
 
-    font-size: 48px;
+    font-size: 46px;
 
     font-weight: 800;
 
@@ -1450,25 +1523,55 @@ main {
     letter-spacing: -1px;
 }
 
+
+/* PARAGRAPH */
+
 .cta-content p {
     max-width: 650px;
 
-    margin: 0 auto 30px;
+    margin: 0 0 28px;
 
-    color: rgba(32, 43, 42, 0.72);
+    color: rgba(255, 255, 255, 0.65);
 
     font-size: 15px;
 
     line-height: 1.8;
 }
 
+
+/* BUTTON */
+
 .cta-content .primary-button {
-    background-color: #202b2a;
+    display: inline-flex;
 
-    border-color: #202b2a;
+    align-items: center;
 
-    color: #ffffff;
+    gap: 10px;
+
+    padding: 14px 25px;
+
+    background-color: #d6a23a;
+
+    border: 1px solid #d6a23a;
+
+    border-radius: 6px;
+
+    color: #202b2a;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
 }
+
 
 .cta-content .primary-button:hover {
     background-color: #ffffff;
@@ -1476,9 +1579,537 @@ main {
     border-color: #ffffff;
 
     color: #202b2a;
+
+    transform: translateY(-3px);
 }
 
 
+/* =========================================================
+   TESTIMONIALS
+========================================================= */
+
+.home-testimonials {
+    position: relative;
+
+    padding: 110px 0;
+
+    background-color: #f5f1e8;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   TESTIMONIAL HEADING
+========================================================= */
+
+.testimonials-heading {
+    display: grid;
+
+    grid-template-columns: 1fr 0.7fr;
+
+    align-items: end;
+
+    gap: 80px;
+
+    margin-bottom: 60px;
+}
+
+
+.testimonials-heading h2 {
+    max-width: 600px;
+
+    margin: 15px 0 0;
+
+    color: #202b2a;
+
+    font-size: 48px;
+
+    font-weight: 800;
+
+    line-height: 1.05;
+
+    letter-spacing: -1.5px;
+}
+
+
+.testimonials-heading h2 span {
+    color: #d6a23a;
+}
+
+
+.testimonials-heading > p {
+    max-width: 420px;
+
+    margin: 0;
+
+    color: rgba(32, 43, 42, 0.65);
+
+    font-size: 14px;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   TESTIMONIAL FEATURE
+========================================================= */
+
+.testimonial-feature {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 120px 1fr 90px;
+
+    min-height: 380px;
+
+    background-color: #202b2a;
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 25px 55px rgba(32, 43, 42, 0.12);
+}
+
+
+/* =========================================================
+   LARGE QUOTE MARK
+========================================================= */
+
+.testimonial-quote-mark {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    padding-top: 45px;
+
+    color: #d6a23a;
+
+    font-family: Georgia, serif;
+
+    font-size: 150px;
+
+    line-height: 1;
+
+    opacity: 0.9;
+}
+
+
+/* =========================================================
+   TESTIMONIAL CONTENT
+========================================================= */
+
+.testimonial-content {
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 55px 40px;
+}
+
+
+/* =========================================================
+   STARS
+========================================================= */
+
+.testimonial-stars {
+    margin-bottom: 25px;
+
+    color: #d6a23a;
+
+    font-size: 14px;
+
+    letter-spacing: 5px;
+}
+
+
+/* =========================================================
+   QUOTE
+========================================================= */
+
+.testimonial-content blockquote {
+    max-width: 780px;
+
+    margin: 0 0 35px;
+
+    color: #ffffff;
+
+    font-size: 25px;
+
+    font-weight: 500;
+
+    line-height: 1.65;
+
+    letter-spacing: -0.2px;
+}
+
+
+/* =========================================================
+   CLIENT
+========================================================= */
+
+.testimonial-client {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.testimonial-client-line {
+    width: 35px;
+
+    height: 2px;
+
+    background-color: #d6a23a;
+}
+
+
+.testimonial-client strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+}
+
+
+.testimonial-client span {
+    display: block;
+
+    color: rgba(255, 255, 255, 0.5);
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   SIDE NUMBER
+========================================================= */
+
+.testimonial-number {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.testimonial-number span {
+    color: #d6a23a;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.testimonial-number-line {
+    width: 1px;
+
+    height: 70px;
+
+    background-color: rgba(214, 162, 58, 0.5);
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.testimonial-navigation {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 8px;
+
+    margin-top: 25px;
+}
+
+
+.testimonial-nav {
+    width: 42px;
+
+    height: 42px;
+
+    background-color: transparent;
+
+    border: 1px solid #cfc8bb;
+
+    border-radius: 50%;
+
+    color: #202b2a;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+.testimonial-nav:hover,
+.testimonial-nav.active {
+    background-color: #d6a23a;
+
+    border-color: #d6a23a;
+
+    color: #202b2a;
+}
+
+
+/* =========================================================
+   OUR APPROACH
+========================================================= */
+
+.home-approach {
+    position: relative;
+
+    padding: 110px 0;
+
+    background-color: #e7e1d5;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   APPROACH HEADING
+========================================================= */
+
+.approach-heading {
+    display: grid;
+
+    grid-template-columns: 1fr 0.7fr;
+
+    align-items: end;
+
+    gap: 70px;
+
+    margin-bottom: 70px;
+}
+
+
+.approach-heading h2 {
+    margin: 15px 0 0;
+
+    color: #202b2a;
+
+    font-size: 48px;
+
+    font-weight: 800;
+
+    line-height: 1.05;
+
+    letter-spacing: -1.5px;
+}
+
+
+.approach-heading h2 span {
+    color: #d6a23a;
+}
+
+
+.approach-heading > p {
+    max-width: 430px;
+
+    margin: 0;
+
+    color: rgba(32, 43, 42, 0.65);
+
+    font-size: 14px;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   APPROACH PROCESS
+========================================================= */
+
+.approach-process {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    border-top: 1px solid rgba(32, 43, 42, 0.18);
+
+    border-bottom: 1px solid rgba(32, 43, 42, 0.18);
+}
+
+
+/* =========================================================
+   APPROACH STEP
+========================================================= */
+
+.approach-step {
+    position: relative;
+
+    min-height: 310px;
+
+    padding: 35px 30px;
+
+    border-right: 1px solid rgba(32, 43, 42, 0.15);
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.approach-step:first-child {
+    border-left: 1px solid rgba(32, 43, 42, 0.15);
+}
+
+
+.approach-step:hover {
+    background-color: #202b2a;
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.approach-number {
+    margin-bottom: 45px;
+
+    color: #d6a23a;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   CONNECTING LINE
+========================================================= */
+
+.approach-line {
+    position: absolute;
+
+    top: 76px;
+
+    left: 30px;
+
+    width: calc(100% - 60px);
+
+    height: 1px;
+
+    background-color: rgba(32, 43, 42, 0.15);
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.approach-content {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.approach-small {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: rgba(32, 43, 42, 0.45);
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+
+.approach-content h3 {
+    margin-bottom: 15px;
+
+    color: #202b2a;
+
+    font-size: 27px;
+
+    font-weight: 800;
+}
+
+
+.approach-content p {
+    margin: 0;
+
+    color: rgba(32, 43, 42, 0.62);
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.approach-step:hover .approach-small {
+    color: rgba(255, 255, 255, 0.45);
+}
+
+
+.approach-step:hover .approach-content h3 {
+    color: #ffffff;
+}
+
+
+.approach-step:hover .approach-content p {
+    color: rgba(255, 255, 255, 0.62);
+}
+
+
+.approach-step:hover .approach-line {
+    background-color: rgba(214, 162, 58, 0.5);
+}
 /* =========================================================
    26. FOOTER
 ========================================================= */
@@ -2726,7 +3357,7 @@ body.home-page .nav-link[href="index.html"]::after {
 .inner-page-banner {
     position: relative;
 
-    min-height: 320px;
+    min-height: 680px;
 
     display: flex;
     align-items: center;
@@ -3248,4 +3879,980 @@ body.home-page .nav-link[href="index.html"]::after {
     font-size: 13px;
 
     line-height: 1.7;
+}
+
+/* =========================================================
+   MEDIA PAGE
+========================================================= */
+
+.media-page {
+    background-color: #f5f1e8;
+}
+
+
+/* =========================================================
+   MEDIA INTRODUCTION
+========================================================= */
+
+.media-introduction {
+    padding: 110px 0;
+    background-color: #f5f1e8;
+}
+
+.media-introduction-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.media-intro-image {
+    position: relative;
+    padding: 0 35px 35px 0;
+}
+
+.media-image-frame {
+    position: relative;
+    z-index: 1;
+}
+
+.media-image-frame::before {
+    content: "";
+    position: absolute;
+    left: -18px;
+    top: -18px;
+    width: 100px;
+    height: 100px;
+    border-top: 2px solid #d6a23a;
+    border-left: 2px solid #d6a23a;
+    z-index: -1;
+}
+
+.media-image-frame::after {
+    content: "";
+    position: absolute;
+    right: -35px;
+    bottom: -35px;
+    width: 75%;
+    height: 75%;
+    background-color: #d6a23a;
+    z-index: -1;
+}
+
+.media-image-frame img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.media-number-box {
+    position: absolute;
+    left: -15px;
+    bottom: 15px;
+    width: 125px;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #202b2a;
+    color: #ffffff;
+    z-index: 3;
+}
+
+.media-number-box span {
+    margin-bottom: 5px;
+    color: #d6a23a;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.media-number-box strong {
+    font-size: 38px;
+    font-weight: 800;
+}
+
+.media-intro-content .section-label {
+    justify-content: flex-start;
+}
+
+.media-intro-content h2 {
+    margin: 0 0 25px;
+    color: #202b2a;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: -1px;
+}
+
+.media-intro-content h2 strong {
+    display: block;
+    color: #8a6424;
+    font-weight: 800;
+}
+
+.media-intro-content p {
+    margin-bottom: 18px;
+    color: #59615f;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.media-intro-content .primary-button {
+    margin-top: 15px;
+}
+
+
+/* =========================================================
+   MEDIA SERVICES
+========================================================= */
+
+.media-services {
+    padding: 110px 0;
+    background-color: #ffffff;
+}
+
+.media-services .section-heading {
+    max-width: 700px;
+    margin-bottom: 60px;
+}
+
+.media-services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.media-service-card {
+    position: relative;
+    min-height: 290px;
+    padding: 30px;
+    background-color: #f5f1e8;
+    border: 1px solid #ded8cd;
+    transition:
+        background-color 0.35s ease,
+        transform 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.media-service-card:hover {
+    background-color: #202b2a;
+    border-color: #202b2a;
+    transform: translateY(-8px);
+}
+
+.media-service-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.media-service-number {
+    color: #8a6424;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.media-service-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d6a23a;
+    color: #202b2a;
+    font-size: 20px;
+}
+
+.media-service-card h3 {
+    margin-bottom: 14px;
+    color: #202b2a;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.media-service-card p {
+    margin: 0;
+    color: #69706d;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.media-service-line {
+    position: absolute;
+    left: 30px;
+    bottom: 25px;
+    width: 35px;
+    height: 2px;
+    background-color: #d6a23a;
+    transition: width 0.35s ease;
+}
+
+.media-service-card:hover .media-service-number {
+    color: #d6a23a;
+}
+
+.media-service-card:hover h3 {
+    color: #ffffff;
+}
+
+.media-service-card:hover p {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.media-service-card:hover .media-service-line {
+    width: 65px;
+}
+
+
+/* =========================================================
+   MEDIA APPROACH
+========================================================= */
+
+.media-approach {
+    padding: 110px 0;
+    background-color: #e7e1d5;
+}
+
+.media-approach-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 90px;
+    align-items: start;
+}
+
+.media-approach-content .section-label {
+    justify-content: flex-start;
+}
+
+.media-approach-content h2 {
+    margin-bottom: 25px;
+    color: #202b2a;
+    font-size: 43px;
+    font-weight: 700;
+    line-height: 1.12;
+}
+
+.media-approach-content h2 strong {
+    display: block;
+    color: #8a6424;
+    font-weight: 800;
+}
+
+.media-approach-content p {
+    margin-bottom: 18px;
+    color: #59615f;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.media-process {
+    border-top: 1px solid #cfc8bb;
+}
+
+.media-process-item {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 20px;
+    padding: 27px 0;
+    border-bottom: 1px solid #cfc8bb;
+}
+
+.media-process-item > span {
+    color: #8a6424;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.media-process-item h3 {
+    margin-bottom: 8px;
+    color: #202b2a;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.media-process-item p {
+    margin: 0;
+    color: #69706d;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   MEDIA BANNER
+========================================================= */
+
+.media-banner {
+    background-color: #202b2a;
+}
+
+
+
+/* =========================================================
+   YATRA PAGE
+========================================================= */
+
+.yatra-page {
+    background-color: #f5f1e8;
+}
+
+
+/* =========================================================
+   YATRA INTRODUCTION
+========================================================= */
+
+.yatra-introduction {
+    padding: 110px 0;
+    background-color: #f5f1e8;
+}
+
+.yatra-introduction-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.yatra-intro-image {
+    position: relative;
+    padding: 0 35px 35px 0;
+}
+
+.yatra-image-frame {
+    position: relative;
+    z-index: 1;
+}
+
+.yatra-image-frame::before {
+    content: "";
+    position: absolute;
+    left: -18px;
+    top: -18px;
+    width: 100px;
+    height: 100px;
+    border-top: 2px solid #d6a23a;
+    border-left: 2px solid #d6a23a;
+    z-index: -1;
+}
+
+.yatra-image-frame::after {
+    content: "";
+    position: absolute;
+    right: -35px;
+    bottom: -35px;
+    width: 75%;
+    height: 75%;
+    background-color: #d6a23a;
+    z-index: -1;
+}
+
+.yatra-image-frame img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.yatra-number-box {
+    position: absolute;
+    left: -15px;
+    bottom: 15px;
+    width: 125px;
+    height: 125px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #202b2a;
+    color: #ffffff;
+    z-index: 3;
+}
+
+.yatra-number-box span {
+    margin-bottom: 5px;
+    color: #d6a23a;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.yatra-number-box strong {
+    font-size: 38px;
+    font-weight: 800;
+}
+
+.yatra-intro-content .section-label {
+    justify-content: flex-start;
+}
+
+.yatra-intro-content h2 {
+    margin: 0 0 25px;
+
+    color: #202b2a;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: -1px;
+}
+
+.yatra-intro-content h2 strong {
+    display: block;
+    color: #8a6424;
+    font-weight: 800;
+}
+
+.yatra-intro-content p {
+    margin-bottom: 18px;
+
+    color: #59615f;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.yatra-intro-content .primary-button {
+    margin-top: 15px;
+}
+
+
+/* =========================================================
+   YATRA SERVICES
+========================================================= */
+
+.yatra-services {
+    padding: 110px 0;
+    background-color: #ffffff;
+}
+
+.yatra-services .section-heading {
+    max-width: 700px;
+    margin-bottom: 60px;
+}
+
+.yatra-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.yatra-service-card {
+    position: relative;
+
+    min-height: 285px;
+    padding: 30px;
+
+    background-color: #f5f1e8;
+    border: 1px solid #ded8cd;
+
+    transition:
+        background-color 0.35s ease,
+        transform 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.yatra-service-card:hover {
+    background-color: #202b2a;
+    border-color: #202b2a;
+    transform: translateY(-8px);
+}
+
+.yatra-service-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 35px;
+}
+
+.yatra-service-number {
+    color: #8a6424;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.yatra-service-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #d6a23a;
+    color: #202b2a;
+
+    font-size: 20px;
+}
+
+.yatra-service-card h3 {
+    margin-bottom: 14px;
+
+    color: #202b2a;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.yatra-service-card p {
+    margin: 0;
+
+    color: #69706d;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.yatra-service-line {
+    position: absolute;
+
+    left: 30px;
+    bottom: 25px;
+
+    width: 35px;
+    height: 2px;
+
+    background-color: #d6a23a;
+
+    transition: width 0.35s ease;
+}
+
+.yatra-service-card:hover .yatra-service-number {
+    color: #d6a23a;
+}
+
+.yatra-service-card:hover h3 {
+    color: #ffffff;
+}
+
+.yatra-service-card:hover p {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.yatra-service-card:hover .yatra-service-line {
+    width: 65px;
+}
+
+
+/* =========================================================
+   YATRA APPROACH
+========================================================= */
+
+.yatra-approach {
+    padding: 110px 0;
+    background-color: #e7e1d5;
+}
+
+.yatra-approach-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 90px;
+    align-items: start;
+}
+
+.yatra-approach-content .section-label {
+    justify-content: flex-start;
+}
+
+.yatra-approach-content h2 {
+    margin-bottom: 25px;
+
+    color: #202b2a;
+    font-size: 43px;
+    font-weight: 700;
+    line-height: 1.12;
+}
+
+.yatra-approach-content h2 strong {
+    display: block;
+    color: #8a6424;
+    font-weight: 800;
+}
+
+.yatra-approach-content p {
+    margin-bottom: 18px;
+
+    color: #59615f;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.yatra-process {
+    border-top: 1px solid #cfc8bb;
+}
+
+.yatra-process-item {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 20px;
+
+    padding: 27px 0;
+
+    border-bottom: 1px solid #cfc8bb;
+}
+
+.yatra-process-item > span {
+    color: #8a6424;
+
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.yatra-process-item h3 {
+    margin-bottom: 8px;
+
+    color: #202b2a;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.yatra-process-item p {
+    margin: 0;
+
+    color: #69706d;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   YATRA BANNER
+========================================================= */
+
+.yatra-banner {
+    background-color: #202b2a;
+}
+
+/* =========================================================
+   SERVICES PAGE
+========================================================= */
+
+.services-page {
+    background-color: #f5f1e8;
+}
+
+
+/* =========================================================
+   SERVICES INTRODUCTION
+========================================================= */
+
+.services-introduction {
+    padding: 110px 0;
+    background-color: #f5f1e8;
+}
+
+.services-introduction-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.services-intro-image {
+    position: relative;
+    padding: 0 35px 35px 0;
+}
+
+.services-image-frame {
+    position: relative;
+    z-index: 1;
+}
+
+.services-image-frame::before {
+    content: "";
+    position: absolute;
+    left: -18px;
+    top: -18px;
+    width: 100px;
+    height: 100px;
+    border-top: 2px solid #d6a23a;
+    border-left: 2px solid #d6a23a;
+    z-index: -1;
+}
+
+.services-image-frame::after {
+    content: "";
+    position: absolute;
+    right: -35px;
+    bottom: -35px;
+    width: 75%;
+    height: 75%;
+    background-color: #d6a23a;
+    z-index: -1;
+}
+
+.services-image-frame img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.services-number-box {
+    position: absolute;
+    left: -15px;
+    bottom: 15px;
+    width: 125px;
+    height: 125px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #202b2a;
+    color: #ffffff;
+    z-index: 3;
+}
+
+.services-number-box span {
+    margin-bottom: 5px;
+    color: #d6a23a;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.services-number-box strong {
+    font-size: 38px;
+    font-weight: 800;
+}
+
+.services-intro-content .section-label {
+    justify-content: flex-start;
+}
+
+.services-intro-content h2 {
+    margin: 0 0 25px;
+    color: #202b2a;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: -1px;
+}
+
+.services-intro-content h2 strong {
+    display: block;
+    color: #8a6424;
+    font-weight: 800;
+}
+
+.services-intro-content p {
+    margin-bottom: 18px;
+    color: #59615f;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.services-intro-content .primary-button {
+    margin-top: 15px;
+}
+
+
+/* =========================================================
+   PROFESSIONAL SERVICES
+========================================================= */
+
+.professional-services {
+    padding: 110px 0;
+    background-color: #ffffff;
+}
+
+.professional-services .section-heading {
+    max-width: 700px;
+    margin-bottom: 60px;
+}
+
+.professional-services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.professional-service-card {
+    position: relative;
+    min-height: 290px;
+    padding: 30px;
+
+    background-color: #f5f1e8;
+    border: 1px solid #ded8cd;
+
+    transition:
+        background-color 0.35s ease,
+        transform 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.professional-service-card:hover {
+    background-color: #202b2a;
+    border-color: #202b2a;
+    transform: translateY(-8px);
+}
+
+.professional-service-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.professional-service-number {
+    color: #8a6424;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.professional-service-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #d6a23a;
+    color: #202b2a;
+
+    font-size: 20px;
+}
+
+.professional-service-card h3 {
+    margin-bottom: 14px;
+    color: #202b2a;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.professional-service-card p {
+    margin: 0;
+    color: #69706d;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.professional-service-line {
+    position: absolute;
+    left: 30px;
+    bottom: 25px;
+
+    width: 35px;
+    height: 2px;
+
+    background-color: #d6a23a;
+
+    transition: width 0.35s ease;
+}
+
+.professional-service-card:hover
+.professional-service-number {
+    color: #d6a23a;
+}
+
+.professional-service-card:hover h3 {
+    color: #ffffff;
+}
+
+.professional-service-card:hover p {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.professional-service-card:hover
+.professional-service-line {
+    width: 65px;
+}
+
+
+/* =========================================================
+   SERVICES APPROACH
+========================================================= */
+
+.services-approach {
+    padding: 110px 0;
+    background-color: #e7e1d5;
+}
+
+.services-approach-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 90px;
+    align-items: start;
+}
+
+.services-approach-content .section-label {
+    justify-content: flex-start;
+}
+
+.services-approach-content h2 {
+    margin-bottom: 25px;
+    color: #202b2a;
+    font-size: 43px;
+    font-weight: 700;
+    line-height: 1.12;
+}
+
+.services-approach-content h2 strong {
+    display: block;
+    color: #8a6424;
+    font-weight: 800;
+}
+
+.services-approach-content p {
+    margin-bottom: 18px;
+    color: #59615f;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.services-process {
+    border-top: 1px solid #cfc8bb;
+}
+
+.services-process-item {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 20px;
+
+    padding: 27px 0;
+
+    border-bottom: 1px solid #cfc8bb;
+}
+
+.services-process-item > span {
+    color: #8a6424;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.services-process-item h3 {
+    margin-bottom: 8px;
+    color: #202b2a;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.services-process-item p {
+    margin: 0;
+    color: #69706d;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   SERVICES BANNER
+========================================================= */
+
+.services-banner {
+    background-color: #202b2a;
 }

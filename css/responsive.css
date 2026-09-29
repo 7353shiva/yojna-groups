@@ -1,152 +1,290 @@
 /* =========================================================
    YOJNA GROUP
-   RESPONSIVE STYLESHEET
+   RESPONSIVE CSS
 ========================================================= */
 
 
 /* =========================================================
    LARGE TABLETS / SMALL LAPTOPS
-   1200px and below
+   MAX WIDTH: 1200px
 ========================================================= */
 
 @media (max-width: 1200px) {
 
-    /* HEADER */
+    /* -----------------------------------------------------
+       COMMON CONTAINER
+    ----------------------------------------------------- */
 
-    .main-navigation {
-        gap: 20px;
-    }
-
-    .nav-link {
-        font-size: 11px;
-    }
-
-
-    /* HERO */
-
-    .hero-content h1 {
-        font-size: 50px;
+    .container {
+        width: 90%;
     }
 
 
-    /* ACTIVITIES */
+    /* -----------------------------------------------------
+       HEADER
+    ----------------------------------------------------- */
 
-    .activities-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-
-    /* PROJECTS */
-
-    .projects-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-
-    /* CLIENTS */
-
-    .clients-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-}
-
-
-/* =========================================================
-   TABLETS
-   992px and below
-========================================================= */
-
-@media (max-width: 992px) {
-
-    /* HEADER */
-
-    .header-top {
-        height: 68px;
-    }
-
-    .header-navigation {
-        height: 52px;
+    .header-container {
+        padding: 0 20px;
     }
 
     .main-navigation {
-        gap: 15px;
+        gap: 18px;
     }
 
     .nav-link {
         font-size: 10px;
     }
 
-    main {
-        padding-top: 120px;
-    }
 
-
-    /* HERO */
+    /* -----------------------------------------------------
+       HOME HERO
+    ----------------------------------------------------- */
 
     .home-hero {
-        height: calc(100vh - 120px);
-        min-height: 550px;
+        min-height: 650px;
+    }
+
+    .hero-content {
+        max-width: 700px;
     }
 
     .hero-content h1 {
-        font-size: 44px;
-    }
-
-    .hero-content p {
-        max-width: 550px;
-        font-size: 15px;
+        font-size: 58px;
     }
 
 
-    /* ABOUT */
+    /* -----------------------------------------------------
+       COMMON SECTIONS
+    ----------------------------------------------------- */
 
-    .about-preview-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 45px;
-    }
-
-    .about-preview-content h2 {
-        font-size: 34px;
-    }
-
-    .about-preview-image img {
-        height: 400px;
+    .section-heading h2 {
+        font-size: 42px;
     }
 
 
-    /* DIVISIONS */
+    /* -----------------------------------------------------
+       HOME ABOUT
+    ----------------------------------------------------- */
 
-    .divisions-grid {
+    .home-about-grid {
+        gap: 55px;
+    }
+
+    .home-about-content h2 {
+        font-size: 40px;
+    }
+
+
+    /* -----------------------------------------------------
+       HOME ACTIVITIES
+    ----------------------------------------------------- */
+
+    .home-activities-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
 
-    /* FOOTER */
+    /* -----------------------------------------------------
+       HOME DIVISIONS
+    ----------------------------------------------------- */
 
-    .footer-grid {
+    .home-divisions-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
+    }
+
+
+    /* -----------------------------------------------------
+       HOME PROJECTS
+    ----------------------------------------------------- */
+
+    .home-projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* -----------------------------------------------------
+       HOME CLIENTS
+    ----------------------------------------------------- */
+
+    .home-clients-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+
+    /* =====================================================
+       ABOUT PAGE
+    ===================================================== */
+
+    .about-main-grid {
+        gap: 55px;
+    }
+
+    .about-main-content h2 {
+        font-size: 40px;
+    }
+
+    .about-capabilities-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-approach-grid {
+        gap: 55px;
+    }
+
+
+    /* =====================================================
+       ACTIVITIES PAGE
+    ===================================================== */
+
+    .activities-intro-grid {
+        gap: 55px;
+    }
+
+    .activity-services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .activities-media-grid {
+        gap: 55px;
+    }
+
+    .activities-process-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+
+    /* =====================================================
+       EVENTS PAGE
+    ===================================================== */
+
+    .events-introduction-grid {
+        gap: 55px;
+    }
+
+    .events-services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .events-approach-grid {
+        gap: 55px;
+    }
+
+
+    /* =====================================================
+       YATRA PAGE
+    ===================================================== */
+
+    .yatra-introduction-grid {
+        gap: 55px;
+    }
+
+    .yatra-services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .yatra-approach-grid {
+        gap: 55px;
+    }
+
+
+    /* =====================================================
+       SERVICES PAGE
+    ===================================================== */
+
+    .services-introduction-grid {
+        gap: 55px;
+    }
+
+    .professional-services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .services-approach-grid {
+        gap: 55px;
     }
 
 }
 
 
+
 /* =========================================================
-   MOBILE MENU BREAKPOINT
-   768px and below
+   TABLETS
+   MAX WIDTH: 992px
 ========================================================= */
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
 
-    /* HEADER */
+  /* =========================================================
+   OUR APPROACH - TABLET
+========================================================= */
 
-    .site-header {
-        position: fixed;
-    }
+.approach-heading {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+
+    margin-bottom: 50px;
+}
+
+.approach-heading h2 {
+    font-size: 42px;
+}
+
+.approach-process {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.approach-step {
+    min-height: 280px;
+}
+
+.approach-step:nth-child(2) {
+    border-right: none;
+}
+
+.approach-step:nth-child(3),
+.approach-step:nth-child(4) {
+    border-top: 1px solid rgba(32, 43, 42, 0.15);
+}
+
+
+/* =========================================================
+   TESTIMONIALS - TABLET
+========================================================= */
+
+.testimonials-heading {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+}
+
+.testimonials-heading h2 {
+    font-size: 42px;
+}
+
+.testimonial-feature {
+    grid-template-columns: 80px 1fr 65px;
+}
+
+.testimonial-content {
+    padding: 45px 30px;
+}
+
+.testimonial-content blockquote {
+    font-size: 21px;
+}
+
+    /* -----------------------------------------------------
+       HEADER
+    ----------------------------------------------------- */
 
     .header-top {
-        height: 68px;
+        min-height: 80px;
+    }
+
+    .header-container {
+        min-height: 80px;
     }
 
     .site-logo {
@@ -155,52 +293,1097 @@
     }
 
     .site-name {
-        font-size: 19px;
-    }
-
-    .header-navigation {
-        height: 52px;
-    }
-
-    .header-navigation .header-container {
-        justify-content: flex-end;
-    }
-
-    .main-navigation {
-        display: none;
+        font-size: 16px;
     }
 
     .mobile-menu-button {
         display: flex;
     }
 
-    main {
-        padding-top: 120px;
+    .main-navigation {
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 0;
+
+        padding: 15px 0;
+
+        background-color: #202b2a;
+
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .main-navigation.mobile-menu-open {
+        display: flex;
+    }
+
+    .main-navigation .nav-link {
+        width: 100%;
+        padding: 14px 25px;
+
+        text-align: left;
+
+        font-size: 11px;
+    }
+
+    .nav-dropdown {
+        width: 100%;
+    }
+
+    .nav-dropdown-button {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .nav-dropdown-menu {
+        position: static;
+
+        width: 100%;
+
+        transform: none;
+
+        border-top: 1px solid rgba(214, 162, 58, 0.3);
+
+        box-shadow: none;
     }
 
 
-    /* HERO */
+    /* -----------------------------------------------------
+       HERO
+    ----------------------------------------------------- */
 
     .home-hero {
-        height: 650px;
-        min-height: auto;
+        min-height: 600px;
     }
 
     .hero-content {
-        padding: 0 35px;
+        max-width: 650px;
     }
 
     .hero-content h1 {
+        font-size: 50px;
+    }
+
+
+    /* -----------------------------------------------------
+       COMMON SECTION
+    ----------------------------------------------------- */
+
+    .section-heading h2 {
         font-size: 38px;
+    }
+
+
+    /* -----------------------------------------------------
+       HOME ABOUT
+    ----------------------------------------------------- */
+
+    .home-about-grid {
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+    }
+
+    .home-about-image {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .home-about-content {
+        max-width: 700px;
+    }
+
+
+    /* -----------------------------------------------------
+       HOME DIVISIONS
+    ----------------------------------------------------- */
+
+    .home-divisions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* -----------------------------------------------------
+       HOME PROJECTS
+    ----------------------------------------------------- */
+
+    .home-projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* -----------------------------------------------------
+       HOME CLIENTS
+    ----------------------------------------------------- */
+
+    .home-clients-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    /* -----------------------------------------------------
+       COMMON CTA
+    ----------------------------------------------------- */
+
+    .home-contact-cta {
+        padding: 80px 0;
+    }
+
+    .cta-content h2 {
+        font-size: 42px;
+    }
+
+
+    /* =====================================================
+       INNER PAGE BANNER
+    ===================================================== */
+
+    .inner-page-banner {
+        min-height: 280px;
+    }
+
+    .inner-page-banner h1 {
+        font-size: 46px;
+    }
+
+
+    /* =====================================================
+       ABOUT PAGE
+    ===================================================== */
+
+    .about-main {
+        padding: 80px 0;
+    }
+
+    .about-main-grid {
+        grid-template-columns: 1fr;
+        gap: 70px;
+    }
+
+    .about-main-image {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .about-main-content {
+        max-width: 700px;
+    }
+
+    .about-capabilities-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-purpose-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-approach-grid {
+        grid-template-columns: 1fr;
+        gap: 55px;
+    }
+
+
+    /* =====================================================
+       ACTIVITIES PAGE
+    ===================================================== */
+
+    .activities-introduction {
+        padding: 80px 0;
+    }
+
+    .activities-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 70px;
+    }
+
+    .activities-intro-image {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .activities-intro-content {
+        max-width: 700px;
+    }
+
+    .activity-services {
+        padding: 80px 0;
+    }
+
+    .activity-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .activities-media {
+        padding: 80px 0;
+    }
+
+    .activities-media-grid {
+        grid-template-columns: 1fr;
+        gap: 55px;
+    }
+
+    .activities-process {
+        padding: 80px 0;
+    }
+
+    .activities-process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* =====================================================
+       EVENTS PAGE
+    ===================================================== */
+
+    .events-introduction {
+        padding: 80px 0;
+    }
+
+    .events-introduction-grid {
+        grid-template-columns: 1fr;
+        gap: 70px;
+    }
+
+    .events-intro-image {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .events-intro-content {
+        max-width: 700px;
+    }
+
+    .events-services {
+        padding: 80px 0;
+    }
+
+    .events-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .events-approach {
+        padding: 80px 0;
+    }
+
+    .events-approach-grid {
+        grid-template-columns: 1fr;
+        gap: 55px;
+    }
+
+
+    /* =====================================================
+       MEDIA PAGE
+    ===================================================== */
+
+    .media-introduction-grid {
+        grid-template-columns: 1fr;
+        gap: 70px;
+    }
+
+    .media-intro-image {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .media-intro-content {
+        max-width: 700px;
+    }
+
+    .media-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .media-approach-grid {
+        grid-template-columns: 1fr;
+        gap: 55px;
+    }
+
+
+    /* =====================================================
+       YATRA PAGE
+    ===================================================== */
+
+    .yatra-introduction {
+        padding: 80px 0;
+    }
+
+    .yatra-introduction-grid {
+        grid-template-columns: 1fr;
+        gap: 70px;
+    }
+
+    .yatra-intro-image {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .yatra-intro-content {
+        max-width: 700px;
+    }
+
+    .yatra-services {
+        padding: 80px 0;
+    }
+
+    .yatra-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .yatra-approach {
+        padding: 80px 0;
+    }
+
+    .yatra-approach-grid {
+        grid-template-columns: 1fr;
+        gap: 55px;
+    }
+
+
+    /* =====================================================
+       SERVICES PAGE
+    ===================================================== */
+
+    .services-introduction {
+        padding: 80px 0;
+    }
+
+    .services-introduction-grid {
+        grid-template-columns: 1fr;
+        gap: 70px;
+    }
+
+    .services-intro-image {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .services-intro-content {
+        max-width: 700px;
+    }
+
+    .professional-services {
+        padding: 80px 0;
+    }
+
+    .professional-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-approach {
+        padding: 80px 0;
+    }
+
+    .services-approach-grid {
+        grid-template-columns: 1fr;
+        gap: 55px;
+    }
+
+
+    /* -----------------------------------------------------
+       FOOTER
+    ----------------------------------------------------- */
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 45px;
+    }
+
+}
+
+
+
+/* =========================================================
+   MOBILE / TABLETS
+   MAX WIDTH: 768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+
+
+  /* =========================================================
+   OUR APPROACH - MOBILE
+========================================================= */
+
+.home-approach {
+    padding: 80px 0;
+}
+
+.approach-heading h2 {
+    font-size: 36px;
+}
+
+.approach-process {
+    grid-template-columns: 1fr;
+}
+
+.approach-step {
+    min-height: auto;
+
+    padding: 30px 25px;
+
+    border-right: none;
+
+    border-bottom: 1px solid rgba(32, 43, 42, 0.15);
+}
+
+.approach-step:first-child {
+    border-left: none;
+}
+
+.approach-step:nth-child(2),
+.approach-step:nth-child(3),
+.approach-step:nth-child(4) {
+    border-top: none;
+}
+
+.approach-step:last-child {
+    border-bottom: none;
+}
+
+.approach-number {
+    margin-bottom: 35px;
+}
+/* =========================================================
+   TESTIMONIALS - MOBILE
+========================================================= */
+
+.home-testimonials {
+    padding: 80px 0;
+}
+
+.testimonials-heading {
+    margin-bottom: 40px;
+}
+
+.testimonials-heading h2 {
+    font-size: 36px;
+}
+
+.testimonial-feature {
+    grid-template-columns: 55px 1fr;
+
+    min-height: auto;
+}
+
+.testimonial-quote-mark {
+    padding-top: 35px;
+
+    font-size: 100px;
+}
+
+.testimonial-content {
+    padding: 40px 25px 45px 15px;
+}
+
+.testimonial-content blockquote {
+    font-size: 18px;
+
+    line-height: 1.6;
+}
+
+.testimonial-number {
+    display: none;
+}
+
+.testimonial-navigation {
+    justify-content: center;
+}
+
+    /* -----------------------------------------------------
+       COMMON
+    ----------------------------------------------------- */
+
+    .container {
+        width: 90%;
+    }
+
+    .section-heading h2 {
+        font-size: 34px;
+    }
+
+
+    /* -----------------------------------------------------
+       HEADER
+    ----------------------------------------------------- */
+
+    .header-top {
+        min-height: 72px;
+    }
+
+    .header-container {
+        min-height: 72px;
+        padding: 0 15px;
+    }
+
+    .site-logo {
+        width: 44px;
+        height: 44px;
+    }
+
+    .site-name {
+        font-size: 15px;
+    }
+
+    .main-navigation {
+        max-height: calc(100vh - 72px);
+        overflow-y: auto;
+    }
+
+
+    /* -----------------------------------------------------
+       HERO
+    ----------------------------------------------------- */
+
+    .home-hero {
+        min-height: 560px;
+    }
+
+    .hero-content {
+        max-width: 90%;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
     }
 
     .hero-content p {
         font-size: 14px;
+    }
+
+    .hero-arrow {
+        width: 42px;
+        height: 42px;
+    }
+
+
+    /* -----------------------------------------------------
+       COMMON SECTIONS
+    ----------------------------------------------------- */
+
+    .home-about,
+    .home-activities,
+    .home-divisions,
+    .home-projects,
+    .home-clients {
+        padding: 70px 0;
+    }
+
+
+    /* -----------------------------------------------------
+       HOME ACTIVITIES
+    ----------------------------------------------------- */
+
+    .home-activities-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* -----------------------------------------------------
+       HOME DIVISIONS
+    ----------------------------------------------------- */
+
+    .home-divisions-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* -----------------------------------------------------
+       HOME PROJECTS
+    ----------------------------------------------------- */
+
+    .home-projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* -----------------------------------------------------
+       HOME CLIENTS
+    ----------------------------------------------------- */
+
+    .home-clients-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+
+    /* -----------------------------------------------------
+       CTA
+    ----------------------------------------------------- */
+
+    .home-contact-cta {
+        padding: 70px 0;
+    }
+
+    .cta-content h2 {
+        font-size: 36px;
+    }
+
+    .cta-content p {
+        font-size: 14px;
+    }
+
+
+    /* =====================================================
+       INNER PAGE BANNER
+    ===================================================== */
+
+    .inner-page-banner {
+        min-height: 250px;
+    }
+
+    .inner-page-banner h1 {
+        font-size: 38px;
+    }
+
+    .inner-page-banner-content {
+        padding-top: 10px;
+    }
+
+
+    /* =====================================================
+       ABOUT PAGE
+    ===================================================== */
+
+    .about-main {
+        padding: 65px 0;
+    }
+
+    .about-main-image {
+        padding: 0 25px 25px 0;
+    }
+
+    .about-main-image img {
+        height: 420px;
+    }
+
+    .about-year-box {
+        width: 105px;
+        height: 105px;
+
+        left: -10px;
+        bottom: 10px;
+    }
+
+    .about-main-content h2 {
+        font-size: 36px;
+    }
+
+    .about-capabilities {
+        padding: 65px 0;
+    }
+
+    .about-capabilities-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .about-purpose {
+        padding: 65px 0;
+    }
+
+    .about-approach {
+        padding: 65px 0;
+    }
+
+    .about-approach-content h2 {
+        font-size: 36px;
+    }
+
+
+    /* =====================================================
+       ACTIVITIES PAGE
+    ===================================================== */
+
+    .activities-introduction {
+        padding: 65px 0;
+    }
+
+    .activities-intro-image {
+        padding: 0 25px 25px 0;
+    }
+
+    .activities-image-frame img {
+        height: 420px;
+    }
+
+    .activities-number-box {
+        width: 105px;
+        height: 105px;
+    }
+
+    .activities-intro-content h2 {
+        font-size: 36px;
+    }
+
+    .activity-services {
+        padding: 65px 0;
+    }
+
+    .activity-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .activities-media {
+        padding: 65px 0;
+    }
+
+    .activities-media-grid {
+        gap: 40px;
+    }
+
+    .activities-process {
+        padding: 65px 0;
+    }
+
+    .activities-process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* =====================================================
+       EVENTS PAGE
+    ===================================================== */
+
+    .events-introduction {
+        padding: 65px 0;
+    }
+
+    .events-intro-image {
+        padding: 0 25px 25px 0;
+    }
+
+    .events-image-frame img {
+        height: 420px;
+    }
+
+    .events-number-box {
+        width: 105px;
+        height: 105px;
+    }
+
+    .events-intro-content h2 {
+        font-size: 36px;
+    }
+
+    .events-services {
+        padding: 65px 0;
+    }
+
+    .events-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .events-approach {
+        padding: 65px 0;
+    }
+
+    .events-approach-content h2 {
+        font-size: 36px;
+    }
+
+
+    /* =====================================================
+       MEDIA PAGE
+    ===================================================== */
+
+    .media-introduction {
+        padding: 65px 0;
+    }
+
+    .media-intro-image {
+        padding: 0 25px 25px 0;
+    }
+
+    .media-image-frame img {
+        height: 420px;
+    }
+
+    .media-number-box {
+        width: 105px;
+        height: 105px;
+    }
+
+    .media-intro-content h2 {
+        font-size: 36px;
+    }
+
+    .media-services {
+        padding: 65px 0;
+    }
+
+    .media-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .media-approach {
+        padding: 65px 0;
+    }
+
+    .media-approach-content h2 {
+        font-size: 36px;
+    }
+
+
+    /* =====================================================
+       YATRA PAGE
+    ===================================================== */
+
+    .yatra-introduction {
+        padding: 65px 0;
+    }
+
+    .yatra-intro-image {
+        padding: 0 25px 25px 0;
+    }
+
+    .yatra-image-frame img {
+        height: 420px;
+    }
+
+    .yatra-number-box {
+        width: 105px;
+        height: 105px;
+
+        left: -10px;
+        bottom: 10px;
+    }
+
+    .yatra-intro-content h2 {
+        font-size: 36px;
+    }
+
+    .yatra-services {
+        padding: 65px 0;
+    }
+
+    .yatra-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .yatra-service-card {
+        min-height: 280px;
+        padding: 25px;
+    }
+
+    .yatra-approach {
+        padding: 65px 0;
+    }
+
+    .yatra-approach-content h2 {
+        font-size: 36px;
+    }
+
+
+    /* =====================================================
+       SERVICES PAGE
+    ===================================================== */
+
+    .services-introduction {
+        padding: 65px 0;
+    }
+
+    .services-intro-image {
+        padding: 0 25px 25px 0;
+    }
+
+    .services-image-frame img {
+        height: 420px;
+    }
+
+    .services-number-box {
+        width: 105px;
+        height: 105px;
+
+        left: -10px;
+        bottom: 10px;
+    }
+
+    .services-intro-content h2 {
+        font-size: 36px;
+    }
+
+    .professional-services {
+        padding: 65px 0;
+    }
+
+    .professional-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .professional-service-card {
+        min-height: 280px;
+        padding: 25px;
+    }
+
+    .services-approach {
+        padding: 65px 0;
+    }
+
+    .services-approach-content h2 {
+        font-size: 36px;
+    }
+
+
+    /* -----------------------------------------------------
+       FOOTER
+    ----------------------------------------------------- */
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+    }
+
+}
+
+
+
+/* =========================================================
+   MOBILE
+   MAX WIDTH: 576px
+========================================================= */
+
+@media (max-width: 576px) {
+
+
+
+  /* =========================================================
+   OUR APPROACH - SMALL MOBILE
+========================================================= */
+
+.home-approach {
+    padding: 65px 0;
+}
+
+.approach-heading h2 {
+    font-size: 31px;
+}
+
+.approach-heading > p {
+    font-size: 13px;
+}
+
+.approach-step {
+    padding: 25px 20px;
+}
+
+.approach-content h3 {
+    font-size: 24px;
+}
+  /* =========================================================
+   TESTIMONIALS - SMALL MOBILE
+========================================================= */
+
+.home-testimonials {
+    padding: 65px 0;
+}
+
+.testimonials-heading h2 {
+    font-size: 31px;
+}
+
+.testimonials-heading > p {
+    font-size: 13px;
+}
+
+.testimonial-feature {
+    grid-template-columns: 1fr;
+
+    border-radius: 18px;
+}
+
+.testimonial-quote-mark {
+    position: absolute;
+
+    top: -10px;
+    left: 20px;
+
+    padding: 0;
+
+    font-size: 90px;
+
+    opacity: 0.18;
+}
+
+.testimonial-content {
+    padding: 55px 25px 40px;
+}
+
+.testimonial-content blockquote {
+    font-size: 17px;
+}
+
+.testimonial-client {
+    margin-top: 5px;
+}
+
+
+
+
+    /* -----------------------------------------------------
+       COMMON
+    ----------------------------------------------------- */
+
+    .container {
+        width: 92%;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+
+    /* -----------------------------------------------------
+       HEADER
+    ----------------------------------------------------- */
+
+    .site-name {
+        font-size: 14px;
+    }
+
+    .main-navigation .nav-link {
+        padding: 13px 20px;
+    }
+
+    .nav-dropdown-item {
+        padding: 13px 20px;
+    }
+
+
+    /* -----------------------------------------------------
+       HERO
+    ----------------------------------------------------- */
+
+    .home-hero {
+        min-height: 520px;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
+    .hero-content p {
+        font-size: 13px;
         line-height: 1.7;
     }
 
-    .hero-subtitle {
-        font-size: 12px;
+    .hero-arrow {
+        width: 38px;
+        height: 38px;
     }
 
     .hero-prev {
@@ -211,353 +1394,543 @@
         right: 15px;
     }
 
-    .hero-arrow {
-        width: 42px;
-        height: 42px;
 
-        font-size: 17px;
-    }
+    /* -----------------------------------------------------
+       HOME CLIENTS
+    ----------------------------------------------------- */
 
-
-    /* COMMON SECTIONS */
-
-    .section-padding {
-        padding: 70px 0;
-    }
-
-    .section-heading {
-        margin-bottom: 40px;
-    }
-
-    .section-heading h2 {
-        font-size: 32px;
-    }
-
-
-    /* ABOUT */
-
-    .about-preview-grid {
-        grid-template-columns: 1fr;
-
-        gap: 50px;
-    }
-
-    .about-preview-image img {
-        height: 380px;
-    }
-
-    .about-preview-content {
-        padding-left: 0;
-    }
-
-    .about-preview-content h2 {
-        font-size: 32px;
-    }
-
-
-    /* ACTIVITIES */
-
-    .activities-grid {
-        grid-template-columns: 1fr 1fr;
-
-        gap: 20px;
-    }
-
-
-    /* DIVISIONS */
-
-    .divisions-grid {
-        grid-template-columns: 1fr;
-    }
-
-
-    /* PROJECTS */
-
-    .projects-grid {
-        grid-template-columns: 1fr 1fr;
-
-        gap: 20px;
-    }
-
-
-    /* CLIENTS */
-
-    .clients-grid {
-        grid-template-columns: repeat(3, 1fr);
-
-        gap: 15px;
-    }
-
-    .client-logo {
-        height: 100px;
-    }
-
-
-    /* CTA */
-
-    .home-contact-cta {
-        padding: 80px 0;
-    }
-
-    .cta-content h2 {
-        font-size: 34px;
-    }
-
-
-    /* FOOTER */
-
-    .footer-main {
-        padding: 60px 0 45px;
-    }
-
-    .footer-grid {
-        grid-template-columns: 1fr 1fr;
-
-        gap: 40px;
-    }
-
-}
-
-
-/* =========================================================
-   SMALL MOBILE
-   576px and below
-========================================================= */
-
-@media (max-width: 576px) {
-
-    /* HEADER */
-
-    .header-top {
-        height: 65px;
-    }
-
-    .header-navigation {
-        height: 50px;
-    }
-
-    .site-logo {
-        width: 45px;
-        height: 45px;
-    }
-
-    .site-name {
-        font-size: 17px;
-        letter-spacing: 0.8px;
-    }
-
-    main {
-        padding-top: 115px;
-    }
-
-
-    /* HERO */
-
-    .home-hero {
-        height: 600px;
-    }
-
-    .hero-content {
-        padding: 0 25px;
-    }
-
-    .hero-content h1 {
-        font-size: 32px;
-    }
-
-    .hero-content p {
-        margin-bottom: 25px;
-
-        font-size: 13px;
-    }
-
-    .hero-button {
-        padding: 12px 20px;
-
-        font-size: 11px;
-    }
-
-    .hero-prev {
-        left: 10px;
-    }
-
-    .hero-next {
-        right: 10px;
-    }
-
-    .hero-arrow {
-        width: 38px;
-        height: 38px;
-
-        font-size: 15px;
-    }
-
-    .hero-dots {
-        bottom: 20px;
-    }
-
-
-    /* COMMON */
-
-    .container,
-    .header-container {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .section-padding {
-        padding: 60px 0;
-    }
-
-    .section-heading {
-        margin-bottom: 35px;
-    }
-
-    .section-heading h2 {
-        font-size: 28px;
-    }
-
-    .section-heading p {
-        font-size: 14px;
-    }
-
-
-    /* ABOUT */
-
-    .about-preview-grid {
-        gap: 40px;
-    }
-
-    .about-preview-image::after {
-        right: -8px;
-        bottom: -8px;
-    }
-
-    .about-preview-image img {
-        height: 300px;
-    }
-
-    .about-preview-content h2 {
-        font-size: 28px;
-    }
-
-    .about-preview-content p {
-        font-size: 14px;
-    }
-
-
-    /* ACTIVITIES */
-
-    .activities-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .activity-card {
-        padding: 30px 25px;
-    }
-
-
-    /* DIVISIONS */
-
-    .division-image {
-        height: 220px;
-    }
-
-
-    /* PROJECTS */
-
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .project-image {
-        height: 220px;
-    }
-
-
-    /* CLIENTS */
-
-    .clients-grid {
+    .home-clients-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .client-logo {
-        height: 90px;
 
-        padding: 15px;
-    }
-
-
-    /* CTA */
+    /* -----------------------------------------------------
+       CTA
+    ----------------------------------------------------- */
 
     .home-contact-cta {
-        padding: 70px 0;
+        padding: 60px 0;
     }
 
     .cta-content h2 {
-        font-size: 29px;
+        font-size: 30px;
     }
 
     .cta-content p {
+        font-size: 13px;
+    }
+
+
+    /* =====================================================
+       INNER PAGE BANNER
+    ===================================================== */
+
+    .inner-page-banner {
+        min-height: 220px;
+    }
+
+    .inner-page-banner h1 {
+        font-size: 32px;
+    }
+
+    .inner-page-banner .section-label {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .inner-page-breadcrumb {
+        margin-top: 17px;
+        font-size: 10px;
+    }
+
+
+    /* =====================================================
+       ABOUT PAGE
+    ===================================================== */
+
+    .about-main {
+        padding: 55px 0;
+    }
+
+    .about-main-image {
+        padding: 0 15px 15px 0;
+    }
+
+    .about-main-image img {
+        height: 330px;
+    }
+
+    .about-year-box {
+        width: 90px;
+        height: 90px;
+    }
+
+    .about-year-box strong {
+        font-size: 30px;
+    }
+
+    .about-main-content h2 {
+        font-size: 31px;
+    }
+
+    .about-main-content p {
         font-size: 14px;
     }
 
-    .cta-button {
-        padding: 12px 22px;
+    .about-capabilities {
+        padding: 55px 0;
+    }
 
-        font-size: 11px;
+    .about-capabilities-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-purpose {
+        padding: 55px 0;
+    }
+
+    .about-approach {
+        padding: 55px 0;
+    }
+
+    .about-approach-content h2 {
+        font-size: 31px;
+    }
+
+    .about-step {
+        grid-template-columns: 50px 1fr;
+        gap: 15px;
     }
 
 
-    /* FOOTER */
+    /* =====================================================
+       ACTIVITIES PAGE
+    ===================================================== */
+
+    .activities-introduction {
+        padding: 55px 0;
+    }
+
+    .activities-intro-image {
+        padding: 0 15px 15px 0;
+    }
+
+    .activities-image-frame img {
+        height: 330px;
+    }
+
+    .activities-number-box {
+        width: 90px;
+        height: 90px;
+    }
+
+    .activities-number-box strong {
+        font-size: 30px;
+    }
+
+    .activities-intro-content h2 {
+        font-size: 31px;
+    }
+
+    .activities-intro-content p {
+        font-size: 14px;
+    }
+
+    .activity-services {
+        padding: 55px 0;
+    }
+
+    .activity-services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .activities-media {
+        padding: 55px 0;
+    }
+
+    .activities-process {
+        padding: 55px 0;
+    }
+
+    .activities-process-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* =====================================================
+       EVENTS PAGE
+    ===================================================== */
+
+    .events-introduction {
+        padding: 55px 0;
+    }
+
+    .events-intro-image {
+        padding: 0 15px 15px 0;
+    }
+
+    .events-image-frame img {
+        height: 330px;
+    }
+
+    .events-number-box {
+        width: 90px;
+        height: 90px;
+    }
+
+    .events-number-box strong {
+        font-size: 30px;
+    }
+
+    .events-intro-content h2 {
+        font-size: 31px;
+    }
+
+    .events-intro-content p {
+        font-size: 14px;
+    }
+
+    .events-services {
+        padding: 55px 0;
+    }
+
+    .events-services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .events-approach {
+        padding: 55px 0;
+    }
+
+    .events-approach-content h2 {
+        font-size: 31px;
+    }
+
+
+    /* =====================================================
+       MEDIA PAGE
+    ===================================================== */
+
+    .media-introduction {
+        padding: 55px 0;
+    }
+
+    .media-intro-image {
+        padding: 0 15px 15px 0;
+    }
+
+    .media-image-frame img {
+        height: 330px;
+    }
+
+    .media-number-box {
+        width: 90px;
+        height: 90px;
+    }
+
+    .media-number-box strong {
+        font-size: 30px;
+    }
+
+    .media-intro-content h2 {
+        font-size: 31px;
+    }
+
+    .media-intro-content p {
+        font-size: 14px;
+    }
+
+    .media-services {
+        padding: 55px 0;
+    }
+
+    .media-services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .media-approach {
+        padding: 55px 0;
+    }
+
+    .media-approach-content h2 {
+        font-size: 31px;
+    }
+
+
+    /* =====================================================
+       YATRA PAGE
+    ===================================================== */
+
+    .yatra-introduction {
+        padding: 55px 0;
+    }
+
+    .yatra-intro-image {
+        padding: 0 15px 15px 0;
+    }
+
+    .yatra-image-frame img {
+        height: 330px;
+    }
+
+    .yatra-number-box {
+        width: 90px;
+        height: 90px;
+    }
+
+    .yatra-number-box strong {
+        font-size: 30px;
+    }
+
+    .yatra-intro-content h2 {
+        font-size: 31px;
+    }
+
+    .yatra-intro-content p {
+        font-size: 14px;
+    }
+
+    .yatra-services {
+        padding: 55px 0;
+    }
+
+    .yatra-services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .yatra-service-card {
+        min-height: 250px;
+    }
+
+    .yatra-approach {
+        padding: 55px 0;
+    }
+
+    .yatra-approach-content h2 {
+        font-size: 31px;
+    }
+
+    .yatra-process-item {
+        grid-template-columns: 50px 1fr;
+        gap: 15px;
+    }
+
+
+    /* =====================================================
+       SERVICES PAGE
+    ===================================================== */
+
+    .services-introduction {
+        padding: 55px 0;
+    }
+
+    .services-intro-image {
+        padding: 0 15px 15px 0;
+    }
+
+    .services-image-frame img {
+        height: 330px;
+    }
+
+    .services-number-box {
+        width: 90px;
+        height: 90px;
+    }
+
+    .services-number-box strong {
+        font-size: 30px;
+    }
+
+    .services-intro-content h2 {
+        font-size: 31px;
+    }
+
+    .services-intro-content p {
+        font-size: 14px;
+    }
+
+    .professional-services {
+        padding: 55px 0;
+    }
+
+    .professional-services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .professional-service-card {
+        min-height: 250px;
+    }
+
+    .services-approach {
+        padding: 55px 0;
+    }
+
+    .services-approach-content h2 {
+        font-size: 31px;
+    }
+
+    .services-process-item {
+        grid-template-columns: 50px 1fr;
+        gap: 15px;
+    }
+
+
+    /* -----------------------------------------------------
+       FOOTER
+    ----------------------------------------------------- */
 
     .footer-grid {
         grid-template-columns: 1fr;
-
         gap: 35px;
     }
 
-    .footer-company > p {
-        max-width: 100%;
+    .footer-bottom {
+        text-align: center;
     }
 
 }
+
 
 
 /* =========================================================
    VERY SMALL MOBILE
-   400px and below
+   MAX WIDTH: 400px
 ========================================================= */
 
 @media (max-width: 400px) {
 
-    .site-name {
-        font-size: 15px;
-    }
+
+    /* -----------------------------------------------------
+       HEADER
+    ----------------------------------------------------- */
 
     .site-logo {
         width: 40px;
         height: 40px;
     }
 
+    .site-name {
+        font-size: 13px;
+    }
+
+
+    /* -----------------------------------------------------
+       HERO
+    ----------------------------------------------------- */
+
+    .home-hero {
+        min-height: 480px;
+    }
+
     .hero-content h1 {
+        font-size: 29px;
+    }
+
+
+    /* -----------------------------------------------------
+       INNER BANNER
+    ----------------------------------------------------- */
+
+    .inner-page-banner {
+        min-height: 210px;
+    }
+
+    .inner-page-banner h1 {
         font-size: 28px;
     }
 
-    .hero-content p {
-        font-size: 12px;
+
+    /* -----------------------------------------------------
+       ABOUT
+    ----------------------------------------------------- */
+
+    .about-main-image img {
+        height: 280px;
     }
 
-    .hero-arrow {
-        display: none;
+    .about-main-content h2 {
+        font-size: 28px;
     }
 
-    .clients-grid {
-        gap: 10px;
+
+    /* -----------------------------------------------------
+       ACTIVITIES
+    ----------------------------------------------------- */
+
+    .activities-image-frame img {
+        height: 280px;
     }
 
-    .client-logo {
-        height: 80px;
+    .activities-intro-content h2 {
+        font-size: 28px;
+    }
+
+
+    /* -----------------------------------------------------
+       EVENTS
+    ----------------------------------------------------- */
+
+    .events-image-frame img {
+        height: 280px;
+    }
+
+    .events-intro-content h2 {
+        font-size: 28px;
+    }
+
+
+    /* -----------------------------------------------------
+       MEDIA
+    ----------------------------------------------------- */
+
+    .media-image-frame img {
+        height: 280px;
+    }
+
+    .media-intro-content h2 {
+        font-size: 28px;
+    }
+
+
+    /* -----------------------------------------------------
+       YATRA
+    ----------------------------------------------------- */
+
+    .yatra-image-frame img {
+        height: 280px;
+    }
+
+    .yatra-intro-content h2 {
+        font-size: 28px;
+    }
+
+    .yatra-service-card {
+        padding: 22px;
+    }
+
+    .yatra-service-card h3 {
+        font-size: 18px;
+    }
+
+
+    /* -----------------------------------------------------
+       SERVICES
+    ----------------------------------------------------- */
+
+    .services-image-frame img {
+        height: 280px;
+    }
+
+    .services-intro-content h2 {
+        font-size: 28px;
+    }
+
+    .professional-service-card {
+        padding: 22px;
+    }
+
+    .professional-service-card h3 {
+        font-size: 18px;
     }
 
 }
