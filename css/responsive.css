@@ -1,0 +1,563 @@
+/* =========================================================
+   YOJNA GROUP
+   RESPONSIVE STYLESHEET
+========================================================= */
+
+
+/* =========================================================
+   LARGE TABLETS / SMALL LAPTOPS
+   1200px and below
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    /* HEADER */
+
+    .main-navigation {
+        gap: 20px;
+    }
+
+    .nav-link {
+        font-size: 11px;
+    }
+
+
+    /* HERO */
+
+    .hero-content h1 {
+        font-size: 50px;
+    }
+
+
+    /* ACTIVITIES */
+
+    .activities-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* PROJECTS */
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* CLIENTS */
+
+    .clients-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   TABLETS
+   992px and below
+========================================================= */
+
+@media (max-width: 992px) {
+
+    /* HEADER */
+
+    .header-top {
+        height: 68px;
+    }
+
+    .header-navigation {
+        height: 52px;
+    }
+
+    .main-navigation {
+        gap: 15px;
+    }
+
+    .nav-link {
+        font-size: 10px;
+    }
+
+    main {
+        padding-top: 120px;
+    }
+
+
+    /* HERO */
+
+    .home-hero {
+        height: calc(100vh - 120px);
+        min-height: 550px;
+    }
+
+    .hero-content h1 {
+        font-size: 44px;
+    }
+
+    .hero-content p {
+        max-width: 550px;
+        font-size: 15px;
+    }
+
+
+    /* ABOUT */
+
+    .about-preview-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 45px;
+    }
+
+    .about-preview-content h2 {
+        font-size: 34px;
+    }
+
+    .about-preview-image img {
+        height: 400px;
+    }
+
+
+    /* DIVISIONS */
+
+    .divisions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* FOOTER */
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE MENU BREAKPOINT
+   768px and below
+========================================================= */
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+
+    .site-header {
+        position: fixed;
+    }
+
+    .header-top {
+        height: 68px;
+    }
+
+    .site-logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .site-name {
+        font-size: 19px;
+    }
+
+    .header-navigation {
+        height: 52px;
+    }
+
+    .header-navigation .header-container {
+        justify-content: flex-end;
+    }
+
+    .main-navigation {
+        display: none;
+    }
+
+    .mobile-menu-button {
+        display: flex;
+    }
+
+    main {
+        padding-top: 120px;
+    }
+
+
+    /* HERO */
+
+    .home-hero {
+        height: 650px;
+        min-height: auto;
+    }
+
+    .hero-content {
+        padding: 0 35px;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .hero-subtitle {
+        font-size: 12px;
+    }
+
+    .hero-prev {
+        left: 15px;
+    }
+
+    .hero-next {
+        right: 15px;
+    }
+
+    .hero-arrow {
+        width: 42px;
+        height: 42px;
+
+        font-size: 17px;
+    }
+
+
+    /* COMMON SECTIONS */
+
+    .section-padding {
+        padding: 70px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 40px;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+
+    /* ABOUT */
+
+    .about-preview-grid {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .about-preview-image img {
+        height: 380px;
+    }
+
+    .about-preview-content {
+        padding-left: 0;
+    }
+
+    .about-preview-content h2 {
+        font-size: 32px;
+    }
+
+
+    /* ACTIVITIES */
+
+    .activities-grid {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 20px;
+    }
+
+
+    /* DIVISIONS */
+
+    .divisions-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* PROJECTS */
+
+    .projects-grid {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 20px;
+    }
+
+
+    /* CLIENTS */
+
+    .clients-grid {
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 15px;
+    }
+
+    .client-logo {
+        height: 100px;
+    }
+
+
+    /* CTA */
+
+    .home-contact-cta {
+        padding: 80px 0;
+    }
+
+    .cta-content h2 {
+        font-size: 34px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-main {
+        padding: 60px 0 45px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 40px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   576px and below
+========================================================= */
+
+@media (max-width: 576px) {
+
+    /* HEADER */
+
+    .header-top {
+        height: 65px;
+    }
+
+    .header-navigation {
+        height: 50px;
+    }
+
+    .site-logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .site-name {
+        font-size: 17px;
+        letter-spacing: 0.8px;
+    }
+
+    main {
+        padding-top: 115px;
+    }
+
+
+    /* HERO */
+
+    .home-hero {
+        height: 600px;
+    }
+
+    .hero-content {
+        padding: 0 25px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        margin-bottom: 25px;
+
+        font-size: 13px;
+    }
+
+    .hero-button {
+        padding: 12px 20px;
+
+        font-size: 11px;
+    }
+
+    .hero-prev {
+        left: 10px;
+    }
+
+    .hero-next {
+        right: 10px;
+    }
+
+    .hero-arrow {
+        width: 38px;
+        height: 38px;
+
+        font-size: 15px;
+    }
+
+    .hero-dots {
+        bottom: 20px;
+    }
+
+
+    /* COMMON */
+
+    .container,
+    .header-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .section-padding {
+        padding: 60px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .section-heading p {
+        font-size: 14px;
+    }
+
+
+    /* ABOUT */
+
+    .about-preview-grid {
+        gap: 40px;
+    }
+
+    .about-preview-image::after {
+        right: -8px;
+        bottom: -8px;
+    }
+
+    .about-preview-image img {
+        height: 300px;
+    }
+
+    .about-preview-content h2 {
+        font-size: 28px;
+    }
+
+    .about-preview-content p {
+        font-size: 14px;
+    }
+
+
+    /* ACTIVITIES */
+
+    .activities-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .activity-card {
+        padding: 30px 25px;
+    }
+
+
+    /* DIVISIONS */
+
+    .division-image {
+        height: 220px;
+    }
+
+
+    /* PROJECTS */
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-image {
+        height: 220px;
+    }
+
+
+    /* CLIENTS */
+
+    .clients-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .client-logo {
+        height: 90px;
+
+        padding: 15px;
+    }
+
+
+    /* CTA */
+
+    .home-contact-cta {
+        padding: 70px 0;
+    }
+
+    .cta-content h2 {
+        font-size: 29px;
+    }
+
+    .cta-content p {
+        font-size: 14px;
+    }
+
+    .cta-button {
+        padding: 12px 22px;
+
+        font-size: 11px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .footer-company > p {
+        max-width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   400px and below
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .site-name {
+        font-size: 15px;
+    }
+
+    .site-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 12px;
+    }
+
+    .hero-arrow {
+        display: none;
+    }
+
+    .clients-grid {
+        gap: 10px;
+    }
+
+    .client-logo {
+        height: 80px;
+    }
+
+}
